@@ -1,0 +1,15 @@
+{
+  "name": "fe-commitlint-config",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "juncern",
+  "description": "Git规范",
+  "license": "MIT",
+  "keywords": [
+    "commit",
+    "lint"
+  ],
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^8.0.0"
+  }
+}
