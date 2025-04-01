@@ -1,0 +1,42 @@
+{
+  "name": "engineering-oriented",
+  "private": true,
+  "description": "前端编码规范工程化",
+  "author": "Juncern",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "init": "pnpm install",
+    "clean": "lerna clean && pnpm install",
+    "build": "lerna run build --stream",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "depoly": "bash ./scripts/deploy.sh",
+    "publish": "lerna publish",
+    "lint": "markdownlint README.md",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "husky": "^9.1.7",
+    "lerna": "^8.2.1",
+    "markdownlint": "^0.37.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typedoc": "^0.28.1",
+    "typescript": "^5.8.2",
+    "vue-template-compiler": "^2.7.16",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8"
+  },
+  "peerDependencies": {
+    "pnpm": ">=8.7.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
