@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      pnpm:
+        specifier: '>=8.7.0'
+        version: 10.7.0
     devDependencies:
       conventional-changelog-conventionalcommits:
         specifier: ^8.0.0
@@ -47,6 +51,12 @@ importers:
       vuepress-plugin-zooming:
         specifier: ^1.1.8
         version: 1.1.8
+
+  packages/commitlint-config:
+    devDependencies:
+      conventional-changelog-conventionalcommits:
+        specifier: ^8.0.0
+        version: 8.0.0
 
 packages:
 
@@ -9972,6 +9982,12 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /pnpm@10.7.0:
+    resolution: {integrity: sha512-a4Za1LYqHZhCth1nSjk5A7hx2SRJVPZSuIQsK1U8chdrJ49kxGPlLUD/+KujhcI1yMns9cx95P14uLttSWM6tg==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+    dev: false
 
   /portfinder@1.0.35(supports-color@6.1.0):
     resolution: {integrity: sha512-73JaFg4NwYNAufDtS5FsFu/PdM49ahJrO1i44aCRsDWju1z5wuGDaqyFUQWR6aJoK2JPDWlaYYAGFNIGTSUHSw==}
