@@ -1,4 +1,4 @@
-# fe-engineering-oriented
+# engineering-oriented
 
 前端编码规范工程化
 
@@ -34,16 +34,16 @@
 
 我们引入了多个业界流行的 `Linter` 作为规约文档的配套工具，并根据规约内容定制了对应的规则包，它们包括：
 
-| 规约                                                      | Lint 工具                                               | npm 包                                                                                                                |
-| --------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 ``TypeScript 编码规范`` Node 编码规范 | [ESLint](https://eslint.org/)                              | [fe-engineering-oriented-eslint-config](https://www.npmjs.com/package/fe-engineering-oriented-eslint-config)             |
-| CSS 编码规范                                              | [stylelint](https://stylelint.io/)                         | [fe-engineering-oriented-stylelint-config](https://www.npmjs.com/package/fe-engineering-oriented-stylelint-config)       |
-| Git 规范                                                  | [commitlint](https://commitlint.js.org/#/)                 | [fe-engineering-oriented-commitlint-config](https://www.npmjs.com/package/fe-engineering-oriented-commitlint-config)     |
-| 文档规范                                                  | [markdownlint](https://github.com/DavidAnson/markdownlint) | [fe-engineering-oriented-markdownlint-config](https://www.npmjs.com/package/fe-engineering-oriented-markdownlint-config) |
+| 规约                                                      | Lint 工具                                               | npm 包                                                                                  |
+| --------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| JavaScript 编码规范 ``TypeScript 编码规范`` Node 编码规范 | [ESLint](https://eslint.org/)                              | [@juncern/eslint-config](https://www.npmjs.com/package/@juncern/eslint-config)             |
+| CSS 编码规范                                              | [stylelint](https://stylelint.io/)                         | [@juncern/stylelint-config](https://www.npmjs.com/package/@juncern/stylelint-config)       |
+| Git 规范                                                  | [commitlint](https://commitlint.js.org/#/)                 | [@juncern/commitlint-config](https://www.npmjs.com/package/@juncern/commitlint-config)     |
+| 文档规范                                                  | [markdownlint](https://github.com/DavidAnson/markdownlint) | [@juncern/markdownlint-config](https://www.npmjs.com/package/@juncern/markdownlint-config) |
 
-[fe-engineering-oriented-spec-cli](https://www.npmjs.com/package/fe-engineering-oriented-spec-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规约的成本。
+[@juncern/spec-cli](https://www.npmjs.com/package/@juncern/spec-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规约的成本。
 
-您可以使用[fe-engineering-oriented-spec-cli](https://www.npmjs.com/package/fe-engineering-oriented-spec-cli) 方便地为项目接入全部规范。
+您可以使用[@juncern/spec-cli](https://www.npmjs.com/package/@juncern/spec-cli) 方便地为项目接入全部规范。
 
 ## 其他
 
@@ -73,7 +73,7 @@ pnpm husky install
 
 ## ✉️ 链接
 
-- **前端编码规范工程化** [https://juncern.github.io/fe-engineering-oriented/](https://juncern.github.io/fe-engineering-oriented/)
-- **GitHub**: [https://github.com/juncern/fe-engineering-oriented](https://github.com/juncern/fe-engineering-oriented)
+- **前端编码规范工程化** [https://juncern.github.io/engineering-oriented](https://juncern.github.io/engineering-oriented)
+- **GitHub**: [https://github.com/juncern/engineering-oriented](https://github.com/juncern/engineering-oriented)
 
 </br>

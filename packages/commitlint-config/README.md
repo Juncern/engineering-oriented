@@ -1,4 +1,4 @@
-# `fe-commitlint-config`
+# `commitlint-config`
 
 > Git 规范
 
@@ -9,7 +9,7 @@
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install fe-commitlint-config @commitlint/cli --save-dev
+npm install @juncern/commitlint-config @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -18,7 +18,7 @@ npm install fe-commitlint-config @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-	extends: ['fe-commitlint-config'],
+	extends: ['@juncern/commitlint-config'],
 };
 ```
 

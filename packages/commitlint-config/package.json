@@ -6,18 +6,19 @@
   "description": "Git规范",
   "license": "MIT",
   "keywords": [
-    "commit",
-    "lint"
+    "commitlint",
+    "commitlint-config",
+    "conventional-changelog"
   ],
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^8.0.0"
   },
-  "homepage": "https://github.com/Juncern/fe-engineering-oriented/blob/master/README.md",
+  "homepage": "https://github.com/Juncern/engineering-oriented",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Juncern/fe-engineering-oriented.git"
+    "url": "git+https://github.com/Juncern/engineering-oriented"
   },
   "bugs": {
-    "url": "https://github.com/Juncern/fe-engineering-oriented/issues"
+    "url": "https://github.com/Juncern/engineering-oriented/issues"
   }
 }
