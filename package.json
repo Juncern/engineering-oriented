@@ -7,7 +7,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "start": "pnpm install",
+    "initial": "pnpm install",
     "clean": "lerna clean && pnpm install",
     "build": "lerna run build --stream",
     "docs:dev": "vuepress dev docs",
