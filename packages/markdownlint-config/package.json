@@ -1,0 +1,25 @@
+{
+  "name": "markdownlint-config",
+  "version": "0.0.1",
+  "main": "index.json",
+  "author": "juncern",
+  "license": "MIT",
+  "description": "文档规范",
+  "keywords": [
+    "markdownlint",
+    "markdown",
+    "lint",
+    "config"
+  ],
+  "homepage": "https://github.com/Juncern/engineering-oriented",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juncern/engineering-oriented"
+  },
+  "bugs": {
+    "url": "https://github.com/Juncern/engineering-oriented/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.30.0"
+  }
+}
