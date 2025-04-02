@@ -20,5 +20,9 @@
   },
   "bugs": {
     "url": "https://github.com/Juncern/engineering-oriented/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
