@@ -11,5 +11,13 @@
   ],
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^8.0.0"
+  },
+  "homepage": "https://github.com/Juncern/fe-engineering-oriented/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juncern/fe-engineering-oriented.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juncern/fe-engineering-oriented/issues"
   }
 }
