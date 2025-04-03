@@ -13,6 +13,14 @@
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^8.0.0"
   },
+  "peerDependencies": {
+    "@commitlint/cli": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "husky": {
+      "optional": true
+    }
+  },
   "homepage": "https://github.com/Juncern/engineering-oriented",
   "repository": {
     "type": "git",
