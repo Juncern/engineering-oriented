@@ -1,5 +1,5 @@
 ---
-title: commitlint-config
+# title: commitlint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/Juncern/engineering-oriented
 ---
 
-## @juncern/commitlint-config
+# @juncern/commitlint-config
 
 :::tip
 Git 规范
