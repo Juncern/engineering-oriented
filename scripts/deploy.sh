@@ -4,11 +4,16 @@
 set -e
 
 # 获取Git远程仓库的推送地址（通常是GitHub仓库的URL）,并赋值给变量push_addr
+# git@github.com:Juncern/engineering-oriented.git
 push_addr=`git remote get-url --push origin`
+
 # 获取Git提交信息，包括分支名称、提交哈希值和提交描述，并赋值给变量commit_info
+# heads/master-0-g3a3894a
 commit_info=`git describe --all --long --always`
+
 # 设置VuePress构建输出的目录路径，将其赋值给变量dist_dir
 dist_path='docs/.vuepress/dist'
+
 # 设置要推送到远程仓库的分支名称，将其赋值给变量push_branch
 push_branch='gh-pages'
 

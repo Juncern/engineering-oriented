@@ -19,19 +19,21 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
+    "@vuepress/shared-utils": "1.9.9",
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "husky": "^9.1.7",
     "lerna": "^8.2.1",
+    "lru-cache": "5.1.1",
     "markdownlint": "^0.37.4",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "tslib": "^2.8.1",
     "typedoc": "^0.28.1",
     "typescript": "^5.8.2",
-    "vue-template-compiler": "^2.7.16",
-    "vuepress": "^1.9.10",
-    "vuepress-plugin-one-click-copy": "^1.0.6",
-    "vuepress-plugin-zooming": "^1.1.8"
+    "vue-template-compiler": "^2.7.14",
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.7"
   },
   "peerDependencies": {
     "pnpm": ">=8.7.0"
@@ -39,5 +41,11 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
+  },
+  "pnpm": {
+    "overrides": {
+      "lru-cache": "5.1.1",
+      "@vuepress/shared-utils": "1.9.9"
+    }
   }
 }

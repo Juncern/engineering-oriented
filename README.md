@@ -36,14 +36,14 @@
 
 | 规约                                                      | Lint 工具                                               | npm 包                                                                                  |
 | --------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 ``TypeScript 编码规范`` Node 编码规范 | [ESLint](https://eslint.org/)                              | [@juncern/eslint-config](https://www.npmjs.com/package/@juncern/eslint-config)             |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [@juncern/eslint-config](https://www.npmjs.com/package/@juncern/eslint-config)             |
 | CSS 编码规范                                              | [stylelint](https://stylelint.io/)                         | [@juncern/stylelint-config](https://www.npmjs.com/package/@juncern/stylelint-config)       |
 | Git 规范                                                  | [commitlint](https://commitlint.js.org/#/)                 | [@juncern/commitlint-config](https://www.npmjs.com/package/@juncern/commitlint-config)     |
 | 文档规范                                                  | [markdownlint](https://github.com/DavidAnson/markdownlint) | [@juncern/markdownlint-config](https://www.npmjs.com/package/@juncern/markdownlint-config) |
 
-[@juncern/spec-cli](https://www.npmjs.com/package/@juncern/spec-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规约的成本。
+[@juncern/fe-lint](https://www.npmjs.com/package/@juncern/fe-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规约的成本。
 
-您可以使用[@juncern/spec-cli](https://www.npmjs.com/package/@juncern/spec-cli) 方便地为项目接入全部规范。
+您可以使用[@juncern/fe-lint](https://www.npmjs.com/package/@juncern/fe-lint) 方便地为项目接入全部规范。
 
 ## 其他
 
