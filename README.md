@@ -65,12 +65,6 @@ pnpm install -g conventional-changelog-cli
 pnpm run changelog
 ```
 
-### 设置 `husky`
-
-```bash
-pnpm husky install
-```
-
 ## ✉️ 链接
 
 - **前端编码规范工程化** [https://juncern.github.io/engineering-oriented](https://juncern.github.io/engineering-oriented)
