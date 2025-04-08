@@ -1,0 +1,41 @@
+{
+  "name": "@juncern/stylelint-config",
+  "version": "0.0.1",
+  "author": "juncern",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "前端团队的 Stylelint 共享配置，用于强制执行 CSS/SCSS 代码规范",
+  "keywords": [
+    "css",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "stylelint \"**/*.{css,scss,less}\" --config index.js",
+    "prepublishOnly": "npm run test"
+  },
+  "homepage": "https://github.com/Juncern/engineering-oriented",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juncern/engineering-oriented.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juncern/engineering-oriented/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "peerDependencies": {
+    "stylelint": ">=14.3.0",
+    "stylelint-scss": ">=4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  }
+}
