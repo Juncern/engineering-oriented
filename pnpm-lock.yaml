@@ -65,6 +65,24 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  packages/eslint-config:
+    devDependencies:
+      jest:
+        specifier: ^29.5.0
+        version: 29.7.0(@types/node@20.2.5)(ts-node@10.9.1)
+      postcss-less:
+        specifier: ^6.0.0
+        version: 6.0.0(postcss@8.5.3)
+      postcss-scss:
+        specifier: ^4.0.9
+        version: 4.0.9(postcss@8.5.3)
+      stylelint:
+        specifier: ^14.3.0
+        version: 14.16.1
+      stylelint-scss:
+        specifier: ^4.1.0
+        version: 4.7.0(stylelint@14.16.1)
+
   packages/markdownlint-config:
     dependencies:
       markdownlint:
@@ -7264,17 +7282,6 @@ packages:
       - supports-color
     dev: true
 
-  /fast-glob@3.2.12:
-    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.5
-    dev: true
-
   /fast-glob@3.2.7:
     resolution: {integrity: sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q==}
     engines: {node: '>=8'}
@@ -7967,7 +7974,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.3
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
