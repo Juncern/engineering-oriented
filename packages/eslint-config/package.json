@@ -15,8 +15,7 @@
   "scripts": {
     "lint": "eslint ./",
     "test": "mocha ./__tests__/*.test.js --timeout 5000",
-    "print-config": "eslint --print-config ./index.js > ./printed-config.json",
-    "prepublishOnly": "npm run lint && npm run test"
+    "print-config": "eslint --print-config ./index.js > ./printed-config.json"
   },
   "homepage": "https://github.com/Juncern/engineering-oriented",
   "repository": {

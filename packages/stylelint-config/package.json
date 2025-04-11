@@ -12,8 +12,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "lint": "stylelint \"**/*.{css,scss,less}\" --config index.js",
-    "prepublishOnly": "npm run test"
+    "lint": "stylelint \"**/*.{css,scss,less}\" --config index.js"
   },
   "homepage": "https://github.com/Juncern/engineering-oriented",
   "repository": {
