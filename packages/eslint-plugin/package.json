@@ -1,0 +1,41 @@
+{
+  "name": "@juncern/eslint-plugin",
+  "version": "0.0.2",
+  "main": "index.js",
+  "author": "juncern",
+  "license": "MIT",
+  "description": "自定义eslint插件",
+  "keywords": [
+    "eslint",
+    "eslint-plugin"
+  ],
+  "files": [
+    "configs/",
+    "rules/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run test"
+  },
+  "homepage": "https://github.com/Juncern/engineering-oriented",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juncern/engineering-oriented.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juncern/engineering-oriented/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "require-all": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "jest": "^29.5.0"
+  }
+}
