@@ -18,6 +18,10 @@
   "bugs": {
     "url": "https://github.com/Juncern/engineering-oriented/issues"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "dev": "npm run copyfiles && tsc -w",
     "build": "rm -rf lib && npm run copyfiles && tsc",
