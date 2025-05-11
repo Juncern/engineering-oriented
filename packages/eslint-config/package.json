@@ -1,6 +1,6 @@
 {
   "name": "@juncern/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "juncern",
   "main": "index.js",
   "license": "MIT",
