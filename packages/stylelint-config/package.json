@@ -1,6 +1,6 @@
 {
   "name": "@juncern/stylelint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "juncern",
   "main": "index.js",
   "license": "MIT",
