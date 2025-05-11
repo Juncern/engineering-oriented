@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs-extra';
 import { PKG, ScanOptions, ScanReport, Config, ScanResult } from '../types';
+import { doESLint, doMarkdownlint, doPrettier, doStylelint } from '../lints';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, fix, outputReport, config: scanConfig } = options;
@@ -12,18 +13,18 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   const pkg: PKG = readConfigFile('package.json');
   const config: Config = scanConfig || readConfigFile('fe-lint.config.js');
   const runErrors: Error[] = [];
-  const results: ScanResult[] = [];
+  let results: ScanResult[] = [];
 
   // prettier
   if (fix && config.enablePrettier !== false) {
-    // await doPrettier(options)
+    await doPrettier(options)
   }
 
   // eslint
   if (config.enableESLint !== false) {
     try {
-      // const eslintResults = await doESLint({ ...optioins, config, pkg });
-      // results = [...results, ...eslintResults];
+      const eslintResults = await doESLint({ ...options, config, pkg });
+      results = [...results, ...eslintResults];
     } catch (error) {
       runErrors.push(error);
     }
@@ -32,8 +33,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // stylelint
   if (config.enableStylelint !== false) {
     try {
-      // const stylelintResults = await doStylelint({...optioins, config, pkg });
-      // results = [...results,...stylelintResults];
+      const stylelintResults = await doStylelint({...options, config, pkg });
+      results = [...results,...stylelintResults];
     } catch (error) {
       runErrors.push(error);
     }
@@ -42,8 +43,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // markdownlint
   if (config.enableMarkdownlint !== false) {
     try {
-      // const markdownlintResults = await doMarkdownlint({...optioins, config, pkg });
-      // results = [...results,...markdownlintResults];
+      const markdownlintResults = await doMarkdownlint({...options, config, pkg });
+      results = [...results,...markdownlintResults];
     } catch (error) {
       runErrors.push(error);
     }

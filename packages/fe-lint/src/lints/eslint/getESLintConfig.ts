@@ -4,6 +4,7 @@ import { ESLINT_FILE_EXT } from '../../utils/constants';
 import { glob } from 'glob';
 import fs from 'fs';
 import path from 'path';
+import { getESLintConfigType } from './getESLintConfigType';
 
 export function getESLintConfig(options: ScanOptions, pkg: PKG, config: Config): ESLint.Options {
   const { cwd, fix, ignore } = options;
@@ -28,7 +29,7 @@ export function getESLintConfig(options: ScanOptions, pkg: PKG, config: Config):
       lintConfig.useEslintrc = false;
       lintConfig.baseConfig = {
         extends: [
-          'plugin:fe-lint/recommended', // TODO
+          getESLintConfigType(cwd, pkg),
           // ESLint 不管格式问题，直接使用 Prettier 进行格式化
           ...(config.enablePrettier ? ['prettier'] : []),
         ],
